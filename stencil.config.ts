@@ -16,11 +16,15 @@ export const config: Config = {
       type: 'docs-readme',
     },
     {
-      type: 'www',
+      type: 'www',  // used when you have the entire FE App in stencil and want to upload it on a server
       serviceWorker: null, // disable service workers
     },
   ],
   testing: {
     browserHeadless: "new",
   },
+  // bundles: [
+    // {components:['']} // the components added in this array will be bundled together. Only do it if you know what you're doing
+
+  // ]
 };
